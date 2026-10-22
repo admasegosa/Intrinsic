@@ -7,6 +7,9 @@
 <meta name="description" content="INTRINSIC (PID2025-168565OB-I00): new Artificial Intelligence methods to make urban mobility and freight transport more efficient, sustainable, safe and resilient. University of Deusto.">
 <meta property="og:title" content="INTRINSIC – ImproviNg urban Transport ResIlieNce and Safety through artificial IntelligenCe">
 <meta property="og:description" content="Research project of the University of Deusto funded by MICIU/AEI (PID2025-168565OB-I00).">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:image" content="https://admasegosa.github.io/Intrinsic/intrinsic-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
@@ -51,7 +54,7 @@
   }
   .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 60px; }
   .wordmark { font-weight: 900; font-size: 1.05rem; letter-spacing: .04em; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
-  .wordmark svg { flex: none; }
+  .wordmark img { flex: none; display: block; }
   .topbar nav { display: flex; gap: 22px; }
   .topbar nav a { color: var(--ink-soft); text-decoration: none; font-size: .88rem; font-weight: 600; }
   .topbar nav a:hover { color: var(--ink); }
@@ -61,6 +64,8 @@
   .hero { padding: 64px 0 40px; }
   .hero .wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 40px; align-items: center; }
   @media (max-width: 960px) { .hero .wrap { grid-template-columns: 1fr; } .hero { padding-top: 36px; } }
+  .hero-logo { margin: 0 0 18px; }
+  .hero-logo img { display: block; width: 100%; max-width: 440px; height: auto; margin-left: -6px; }
   .acronym {
     font-weight: 900;
     font-size: clamp(3rem, 7.4vw, 5.6rem);
@@ -203,12 +208,7 @@
 <header class="topbar">
   <div class="wrap">
     <a class="wordmark" href="#top" aria-label="INTRINSIC home">
-      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
-        <path d="M3 8 H13 L13 13" stroke="#D8941A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-        <path d="M23 5 V13 H13" stroke="#2F6FB2" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-        <path d="M3 22 H9 L13 13" stroke="#C4423C" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="13" cy="13" r="4" fill="#fff" stroke="#1B2A33" stroke-width="2.5"/>
-      </svg>
+      <img src="favicon.png" alt="" width="40" height="40">
       INTRINSIC
     </a>
     <nav aria-label="Sections">
@@ -226,7 +226,7 @@
   <div class="hero">
     <div class="wrap">
       <div>
-        <h1 class="acronym">INTRINSIC</h1>
+        <h1 class="hero-logo"><img src="intrinsic-logo.png" alt="INTRINSIC" width="900" height="533"></h1>
         <p class="fulltitle"><b>I</b>mprovi<b>N</b>g urban <b>T</b>ransport <b>R</b>es<b>I</b>lie<b>N</b>ce and <b>S</b>afety through artificial <b>I</b>ntelligen<b>C</b>e</p>
         <p class="lede">We develop new Artificial Intelligence methods to make the movement of people and goods in cities more efficient, sustainable, safe and resilient.</p>
         <dl class="facts">
